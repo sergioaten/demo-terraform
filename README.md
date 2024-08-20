@@ -84,7 +84,8 @@ terraform destroy
 ```bash
 cd azure
 ```
-&emsp;In the `Azure` lab we created some resources, now the state file has the information of the resources created, we need delete the resources from the State file to import them again
+> [!NOTE]
+> In the `Azure` lab we created some resources, now the state file has the information of the resources created, we need delete the resources from the State file to import them again
 2. List the resources in the state file
 ```bash
 terraform state list
@@ -124,7 +125,15 @@ terraform import azurerm_windows_virtual_machine.demo <resource_id>
 terraform plan
 ```
 Should return `No changes. Infrastructure is up-to-date.`
+
+
 7. Destroy the resources, this command will prompt you to confirm the deployment, type `yes` to confirm
 ```bash
 terraform destroy
 ```
+
+---
+
+> [!IMPORTANT]
+> Make sure your resources have been properly disposed of by running terraform destroy. Remember that resources cost money.
+
