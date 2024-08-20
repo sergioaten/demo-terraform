@@ -43,6 +43,7 @@ terraform plan
 terraform apply
 ```
 8. Check the resources created in the `Azure portal`
+> [!WARNING]
 > Note: Don't destroy the resources yet, we will use them in the **`Import`** lab
 ## AWS
 1. Go to the repository directory `demo-terraform` and then go to the aws lab directory
